@@ -1,12 +1,9 @@
 
 ## 项目概述
 
-* 产品名称：LaraBBS
-* 项目代号：larabbs
-* 官方地址：https://laravel-china.org/topics/6592
+* 产品名称：IT技术社区
 
-LaraBBS 是一个简洁的论坛应用，使用 Laravel5.5 编写而成。一步步开发此项目的教程请见 [《Web 开发实战进阶  - 从零开始构建论坛系统》](https://laravel-china.org/topics/6592)。
-
+IT技术社区是一个简洁的社区应用，使用 Laravel5.5 开发完成。
 ![](https://dn-phphub.qbox.me/uploads/images/201711/01/1/xcr6ijTArV.png)
 
 ## 功能如下
@@ -45,9 +42,9 @@ LaraBBS 是一个简洁的论坛应用，使用 Laravel5.5 编写而成。一步
 
 #### 1. 克隆源代码
 
-克隆 `larabbs` 源代码到本地：
+克隆 `IT技术社区` 源代码到本地：
 
-    > git clone git@github.com:summerblue/larabbs.git
+    > git clone https://github.com/oksvip/it.iokvip.com.git
 
 #### 2. 配置本地的 Homestead 环境
 
@@ -61,15 +58,15 @@ homestead edit
 
 ```
 folders:
-    - map: ~/my-path/larabbs/ # 你本地的项目目录地址
-      to: /home/vagrant/larabbs
+    - map: ~/my-path/it/ # 你本地的项目目录地址
+      to: /home/vagrant/it
 
 sites:
-    - map: larabbs.app
-      to: /home/vagrant/larabbs/public
+    - map: it.app
+      to: /home/vagrant/it/public
 
 databases:
-    - larabbs
+    - it
 ```
 
 3). 应用修改
@@ -114,7 +111,7 @@ $ php artisan migrate --seed
 
 #### 7. 配置 hosts 文件
 
-    echo "192.168.10.10   phphub.app" | sudo tee -a /etc/hosts
+    echo "192.168.10.10   it.app" | sudo tee -a /etc/hosts
 
 ### 前端框架安装
 
@@ -153,14 +150,14 @@ npm run watch-poll
 
 ### 链接入口
 
-* 首页地址：http://larabbs.app/
-* 管理后台：http://larabbs.app/admin
+* 首页地址：http://it.app/
+* 管理后台：http://it.app/admin
 
 管理员账号密码如下:
 
 ```
-username: summer@yousails.com
-password: password
+username: linkphper@gmail.com
+password: admin
 ```
 
 至此, 安装完成 ^_^。
